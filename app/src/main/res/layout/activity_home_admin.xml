@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.craig.firebaseread.AdminPages.AdminHomeActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/euro"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/footerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp">
+
+        <Button
+            android:id="@+id/btnAldi"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:text="Aldi"
+            android:onClick="newScreenAldi"/>
+
+        <Button
+            android:id="@+id/btnLidi"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:onClick="newScreenLidl"
+            android:text="Lidl" />
+
+        <Button
+            android:id="@+id/btnTesco"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:onClick="newScreenTesco"
+            android:text="Tesco"/>
+
+        <Button
+            android:id="@+id/btnDunnes"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:text="Dunnes"
+            android:onClick="newScreenDunnes"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/footerView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+        <Button
+            android:id="@+id/btnProduct"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:onClick="newScreenProduct"
+            android:text="Product" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey"
+            android:text="LogOut"
+            android:onClick="logout"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/imagescenter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+
+        <ImageView
+            android:id="@+id/aldi"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/aldi"
+            />
+
+        <ImageView
+            android:id="@+id/lidl"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/lidl"
+            />
+
+        <ImageView
+            android:id="@+id/tesco"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/tesco"
+            />
+
+        <ImageView
+            android:id="@+id/dunnes"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dunnes"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

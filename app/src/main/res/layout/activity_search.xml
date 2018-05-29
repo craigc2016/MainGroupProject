@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="@color/off_white"
+    tools:context="com.example.craig.firebaseread.Pages.SearchActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/euro"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="377dp"
+            android:layout_above="@+id/btnCompare"
+            android:layout_alignParentTop="true">
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:text="Compare"
+        android:layout_above="@+id/footerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="Home"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/light_grey"
+            android:id="@+id/buttonHomeHome"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:onClick="home"
+            />
+
+        <Button
+            android:text="Search"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonHomeHome"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonSearchHome"
+            android:background="@color/light_grey"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            />
+
+        <Button
+            android:text="Login"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/buttonSettingsHome"
+            android:background="@color/light_grey"
+            android:onClick="login"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

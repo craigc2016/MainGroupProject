@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.craig.firebaseread">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sunburst"
+        android:label="Click Comparisons"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Pages.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <uses-permission android:name="android.permission.INTERNET" />
+        </activity>
+
+        <activity android:name=".Pages.SearchActivity">
+
+        </activity>
+
+
+        <activity android:name=".Pages.CompareScreen">
+
+        </activity>
+
+        <activity android:name=".AdminPages.AdminAldi"
+                  android:label="Aldi Admin Page">
+
+        </activity>
+
+        <activity android:name=".AdminPages.AdminProduct"
+                  android:label="Product Admin Page">
+
+        </activity>
+
+        <activity android:name=".AdminPages.AdminTesco"
+                  android:label="Tesco Admin Page">
+
+        </activity>
+
+        <activity android:name=".AdminPages.AdminLidl"
+                  android:label="Lidl Admin Page">
+
+        </activity>
+
+        <activity android:name=".AdminPages.AdminDunnes"
+                  android:label="Dunnes Admin Page">
+
+        </activity>
+
+        <activity android:name=".Pages.SignUpActivity">
+        </activity>
+
+        <activity android:name=".Pages.LoginActivity">
+        </activity>
+
+        <activity android:name=".AdminPages.AdminHomeActivity">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
