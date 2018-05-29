@@ -32,7 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 /*
- This class is for the hndling of the dunnes table of the application.
+ This class is for the handling of the dunnes table of the application.
  It handles the declaration of the connection to the firebase and listens for the changes
  using listeners. It uses list arrays to hold the values that are from the firebase table.
  It handles the button actions of the page it uses two edit text areas to handle the input from
